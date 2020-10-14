@@ -42,6 +42,11 @@ class ConverterTests: XCTestCase {
     converter = nil
     super.tearDown()
   }
+    
+    func testConversionForTwo() {
+      let result = converter.convert(2)
+      XCTAssertEqual(result, "II", "Conversion for 2 is incorrect")
+    }
 
   func testConversionForOne() {
     let result = converter.convert(1)
